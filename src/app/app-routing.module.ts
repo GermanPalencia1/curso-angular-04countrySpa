@@ -20,6 +20,11 @@ const routes: Routes = [
     component: ContactPageComponent
   },
   {
+    //Para que salgan las rutas de los hijos
+    path: 'contries',
+    loadChildren: () => import('./countries/countries.module').then(m => m.CountriesModule)
+  },
+  {
     path: '**',
     redirectTo: 'home'
   }
