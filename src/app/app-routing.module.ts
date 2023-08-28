@@ -21,12 +21,12 @@ const routes: Routes = [
   },
   {
     //Para que salgan las rutas de los hijos
-    path: 'contries',
+    path: 'countries',
     loadChildren: () => import('./countries/countries.module').then(m => m.CountriesModule)
   },
   {
     path: '**',
-    redirectTo: 'contries'
+    redirectTo: 'countries'
   }
 ];
 
