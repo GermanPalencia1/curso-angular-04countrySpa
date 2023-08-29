@@ -18,7 +18,7 @@ export class CountriesService {
     //Capturar errores a través del pipe
     .pipe(
       catchError(() => of([])),
-      delay(1000)
+      delay(500)
     );
   }
 
