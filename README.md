@@ -20,7 +20,7 @@ Curso basado en Angular desde cero. Hace un recorrido por extenso para poder ini
   
   - Menú de aplicación
 
-04B: Refactorización del código-
+04B: Refactorización del código.
 
   - ngClass y diferentes formas de manipular clases
   
