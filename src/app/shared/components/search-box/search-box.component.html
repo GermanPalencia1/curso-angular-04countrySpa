@@ -1,7 +1,11 @@
+<!-- Se deja fuera porque el Debounce sutituye esta función:
+  (keyup.enter)="emitValue( txtImput.value)"
+-->
+
 <input
   type="text"
   class="form-control"
   [placeholder]="placeholder"
-  (keyup.enter)="emitValue( txtImput.value)"
+  (keyup) ="onKeyPress(txtImput.value)"
   #txtImput
 >
