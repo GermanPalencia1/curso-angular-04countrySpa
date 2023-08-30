@@ -13,6 +13,8 @@ export class SearchBoxComponent implements OnInit, OnDestroy{
   private debouncerSubscription?: Subscription;
 
   @Input()
+  public initialValue: string = ''
+  @Input()
   public placeholder: string = '';
 
 //Para cuando queremos que la consulta se lance pulsando enter
